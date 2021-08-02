@@ -64,6 +64,13 @@ public class Games {
         System.out.println("Com letra k no nome: " + games.stream()
                    .filter((game) -> game.toLowerCase().contains("k"))
                    .collect(Collectors.toList())
+                //Filter sempre recebe uma regra que retorna T ou F
+
+           // Outras formas de coleções
+           //     .collect(Collectors.toList()));
+           //     .collect(Collectors.joining(",")));
+           //     .collect(Collectors.toSet())));
+           //     .collect(Collectors.groupingBy(game -> game.substring(game.indexOf("-") + 1)))
         );
     }
 }
